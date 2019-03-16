@@ -1,0 +1,16 @@
+﻿<Window x:Class="Creep.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Creep"
+        mc:Ignorable="d"
+        WindowStyle="None" WindowState="Maximized" WindowStartupLocation="CenterScreen"
+        x:Name="main"
+        
+        PreviewKeyDown="main_PreviewKeyDown"
+        Title="MainWindow">
+    <Grid>
+        <MediaElement x:Name="video" Loaded="video_Loaded" MediaEnded="MediaElement_MediaEnded" />
+    </Grid>
+</Window>
